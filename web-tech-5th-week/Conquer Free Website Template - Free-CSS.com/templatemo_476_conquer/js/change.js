@@ -60,11 +60,51 @@ function mouseOut5()
 
 function clicked()
 {
-    document.getElementById("alert").innerText = alert;
+    alert("asdasdasd");
 } 
 
 function traki()
 {
     document.getElementById("change_color").innerHTML='mwvane';
     document.getElementById("change_color").style.backgroundColor = 'blue';
+}
+
+document.getElementById("alert").onclick=function(){
+
+    var name= document.getElementById("name");
+    var email= document.getElementById("mail");
+    var subject= document.getElementById("subject");
+    var message= document.getElementById("comment");
+
+    var error = '';
+    if(name.value.length == 0){
+
+        error = error + "name is missing \n";    
+    }
+
+    else if(email.value.length == 0){
+
+        error = error + "email is missing \n";    
+    }
+
+    else if(subject.value.length == 0){
+
+        error = error + "subject is missing \n";    
+    }
+    
+    else if(message.value.length == 0){
+
+        error = error + "message is missing \n";    
+    }
+
+    if(error.length > 0){
+
+        alert(error);
+    }else{
+
+        alert(name.value +' \n'+ email.value +'\n' + subject.value + '\n' + message.value);
+    }
+
+        
+
 }

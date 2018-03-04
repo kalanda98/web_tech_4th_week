@@ -4,7 +4,7 @@ function mouseOver()
     document.getElementById("nika1").style.backgroundColor = "white";
 
 }
-function mouseOut()
+function mouseOut() 
 {
     document.getElementById("nika1").style.color = "white";
     document.getElementById("nika1").style.backgroundColor = "#383E4C";
@@ -56,4 +56,15 @@ function mouseOut5()
 {
     document.getElementById("nika5").style.color = "white";
     document.getElementById("nika5").style.backgroundColor = "#383E4C";
+}
+
+/*function clicked()
+{
+    alert("jandaba!!!");
+} */
+
+function traki()
+{
+    document.getElementById("change_color").innerHTML='mwvane';
+    document.getElementById("change_color").style.backgroundColor = 'blue';
 }

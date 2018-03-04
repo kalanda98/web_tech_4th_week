@@ -58,10 +58,10 @@ function mouseOut5()
     document.getElementById("nika5").style.backgroundColor = "#383E4C";
 }
 
-/*function clicked()
+function clicked()
 {
-    alert("jandaba!!!");
-} */
+    document.getElementById("alert").innerText = alert;
+} 
 
 function traki()
 {
